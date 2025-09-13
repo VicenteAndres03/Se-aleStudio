@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeñaleStudios</title>
+    <title>SenaleStudios</title>
     <link rel="icon" type ="image/x-icon" href="Imagenes/Logo.ico">
     <link rel="stylesheet" href="Estilos.css">
 </head>
@@ -11,12 +11,16 @@
     <header>
         <nav>
             <ul>
-                <img src="Imagenes/Logo.jpeg" alt="Logo" class="Logo">
-                <h1 class="Tit">Señale<h1 class="ulo">Studios</h1></h1>
-                <li><a href="Index.html">Inicio</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="https://bpbarberapeluquera.setmore.com/bastianbueno?instant_experiences_enabled=true">Reserva Ya</a></li>
+                <div class="logo-title">
+                    <img src="Imagenes/Logo.jpeg" alt="Logo" class="Logo">
+                    <h1 class="Tit">Señale<span class="ulo">Studios</span></h1>
+                </div>
+                <button class="hamburguesa" id="hamburguesa">☰</button>
+                <nav class="MenuNavegacion" id="MenuNavegacion">
+                    <li><a href="Index.html" class="Links">Inicio</a></li>
+                    <li><a href="Galeria/galeria.html" class="Links">Galeria</a></li>
+                    <li><a href="https://bpbarberapeluquera.setmore.com/bastianbueno?instant_experiences_enabled=true" class="Links">Reserva Ya</a></li>
+                </nav>
             </ul>
         </nav>
     </header>
@@ -39,7 +43,7 @@
             <input type="email" name="email" placeholder="Email" required>
             <br>
             <label for="mensaje">Mensaje:</label>
-            <textarea placeholder="Mensaje" name="mensaje"></textarea required>
+            <textarea placeholder="Mensaje" name="mensaje" required></textarea>
             <br>
             <input type="submit" class="Enviar" value="Enviar">
         </form>
