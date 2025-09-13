@@ -115,6 +115,7 @@ header ul .Logo{
 .div2 .Formulario{
     display: flex;
     flex-direction: column;
+    align-items: right;
 }
 
 .div2 .Formulario label{
@@ -145,4 +146,8 @@ header ul .Logo{
 
 .div2{
     padding-bottom: 30px;
+}
+
+.linea{
+    color: black;
 }

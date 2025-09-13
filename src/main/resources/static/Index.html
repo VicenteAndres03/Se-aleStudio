@@ -31,19 +31,21 @@
 
     <div class="div2">
         <h1>Contactanos</h1>
-        <form class="Formulario" method="POST">
+        <form class="Formulario" method="POST" id="Formulario">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="Nombre" placeholder="Nombre">
+            <input type="text" name="nombre" placeholder="Nombre" required>
             <br>
             <label for="email">Email:</label>
-            <input type="email" name="Email" placeholder="Email">
+            <input type="email" name="email" placeholder="Email" required>
             <br>
             <label for="mensaje">Mensaje:</label>
-            <textarea placeholder="Mensaje"></textarea>
+            <textarea placeholder="Mensaje" name="mensaje"></textarea required>
             <br>
             <input type="submit" class="Enviar" value="Enviar">
         </form>
     </div>
+
+    <div id="resultado"></div>
 
     <footer>
         <p>&copy; 2025 SeñaleStudios. Todos los derechos reservados.</p>
@@ -53,5 +55,8 @@
             <a href="#">Instagram</a>
         </div>
     </footer>
+
+    <script src="Correo.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
