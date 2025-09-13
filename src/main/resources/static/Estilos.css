@@ -1,0 +1,148 @@
+li{list-style: none;}
+
+body{
+    margin:0;
+}
+
+
+/*Menu*/
+header{
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    border-color: black;
+}
+
+header ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul .Tit{
+    color:goldenrod;
+    padding-left: 10px;
+}
+
+header ul .ulo{
+    padding-right: 80px;
+}
+
+header ul li a{
+    text-decoration: none;
+    margin: 0;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;    
+}
+
+header ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+header ul .Logo{
+    width: 60px;
+    height: auto;
+}
+
+
+
+/*Div1*/
+.div1{
+    background-image: url(Imagenes/Fondo.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(Imagenes/Fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div1 h1{
+    color:white;
+    text-align: center;
+    font-size: 3.5em;   
+}
+
+.div1 p{
+    color:white;
+    text-align: center;
+    font-size: 1.5em;   
+}
+
+.div1 button{
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: goldenrod;
+}
+
+.div1 button:hover{
+    background-color: rgb(172, 130, 25);
+    cursor: pointer;
+}
+
+.div1 .boton{
+    display:flex;
+    justify-content: center;
+}
+
+.div1 .boton a{
+    text-decoration: none;
+    color:black;
+}
+
+
+
+/*Div2*/
+.div2{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+}
+
+.div2 h1{
+    font-size:2.5em;
+}
+
+.div2 .Formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.div2 .Formulario label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.div2 .Formulario input{
+    width: 500px;
+    height: 20px;
+}
+
+.div2 .Formulario textarea{
+    width: 500px;
+    height: 100px;
+}
+
+.div2 .Formulario .Enviar{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.div2{
+    padding-bottom: 30px;
+}
