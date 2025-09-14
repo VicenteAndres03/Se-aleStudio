@@ -12,7 +12,11 @@ body {
 header {
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     max-width: 100%;
+=======
+    max-width: 1500px;
+>>>>>>> 69b3abb24e3d80d213b0432ec1eb5500a52d7a39
     margin: 0 auto;
     position: relative;
     background-color: white;
