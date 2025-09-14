@@ -46,19 +46,16 @@
         	<artifactId>spring-boot-starter-data-jpa</artifactId>
     	</dependency>
 
-<<<<<<< HEAD
 		 <dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-=======
-    	<dependency>
-        	<groupId>com.h2database</groupId>
-        	<artifactId>h2</artifactId>
-        	<scope>runtime</scope>
-    	</dependency>
->>>>>>> 69b3abb24e3d80d213b0432ec1eb5500a52d7a39
+		 <dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

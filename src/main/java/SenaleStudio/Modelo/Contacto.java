@@ -4,19 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-<<<<<<< HEAD
 import jakarta.persistence.Table;
-=======
->>>>>>> 69b3abb24e3d80d213b0432ec1eb5500a52d7a39
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 
 @Entity
-<<<<<<< HEAD
 @Table(name = "contacto")
-=======
->>>>>>> 69b3abb24e3d80d213b0432ec1eb5500a52d7a39
+
 public class Contacto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
