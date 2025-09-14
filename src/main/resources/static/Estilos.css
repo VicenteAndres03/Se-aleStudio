@@ -1,0 +1,276 @@
+li{
+    list-style: none;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Menu*/
+header{
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    padding:10px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header ul .MenuNavegacion{
+    display: flex;
+    margin: 0;
+    padding: 0; /* Agregado para eliminar padding */
+}
+
+.hamburguesa{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+header ul .Tit{
+    color: goldenrod;
+    margin: 0;
+    margin-left: 10px;
+}
+
+header ul .ulo{
+    color: goldenrod;
+}
+
+header ul li a{
+    text-decoration: none;
+    margin: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;    
+    display: block;
+}
+
+header ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+header ul .Logo{
+    width: 60px;
+    height: auto;
+}
+
+/*Div1*/
+.div1{
+    background-image: url(Imagenes/Fondo.jpeg);
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(Imagenes/Fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div1 h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5em;   
+    margin: 0;
+}
+
+.div1 p{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;   
+}
+
+.div1 button{
+    width: 150px;
+    height: 60px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: goldenrod;
+    border: none;
+}
+
+.div1 button:hover{
+    background-color: rgb(172, 130, 25);
+    cursor: pointer;
+}
+
+.div1 .boton{
+    display: flex;
+    justify-content: center;
+}
+
+.div1 .boton a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Div2*/
+.div2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 221, 221);
+    padding-bottom: 30px;
+}
+
+.div2 h1{
+    font-size: 2.5em;
+}
+
+.div2 .Formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div2 .Formulario label{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.div2 .Formulario input{
+    width: 500px;
+    height: 20px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.div2 .Formulario textarea{
+    width: 500px;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 5px;
+    resize: vertical;
+}
+
+.div2 .Formulario .Enviar{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.RedesSociales a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.RedesSociales a:hover {
+    text-decoration: underline;
+}
+
+/*Responsive*/
+@media (max-width: 876px){
+    .MenuNavegacion{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: white;
+        width: 250px;
+        height: 0;
+        overflow: hidden;
+        justify-content: flex-start;
+        align-items: stretch;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: height 0.3s ease-in-out;
+        z-index: 1000;
+        padding: 0;
+        margin: 0;
+    }
+
+    .MenuNavegacion.show{
+        height: 192px;
+    }
+
+    .MenuNavegacion li{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+    }
+
+    .MenuNavegacion .Links{
+        padding: 20px 20px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box;
+        margin: 0;
+        line-height: 1.2;
+        flex: 1;
+    }
+
+    .MenuNavegacion .Links:last-child{
+        border-bottom: none;
+    }
+
+    .MenuNavegacion .Links:hover{
+        background-color: #f5f5f5;
+    }
+
+    .hamburguesa{
+        display: block;
+    }
+
+    header ul{
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .div2 .Formulario input,
+    .div2 .Formulario textarea {
+        width: 90vw;
+        max-width: 400px;
+    }
+
+    .div1 h1 {
+        font-size: 2.5em;
+    }
+
+    .div1 p {
+        font-size: 1.2em;
+        padding: 0 20px;
+    }
+}

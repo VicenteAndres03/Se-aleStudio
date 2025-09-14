@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SenaleStudios</title>
+    <link rel="icon" type ="image/x-icon" href="Imagenes/Logo.ico">
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo-title">
+                    <img src="Imagenes/Logo.jpeg" alt="Logo" class="Logo">
+                    <h1 class="Tit">Señale<span class="ulo">Studios</span></h1>
+                </div>
+                <button class="hamburguesa" id="hamburguesa">☰</button>
+                <nav class="MenuNavegacion" id="MenuNavegacion">
+                    <li><a href="Index.html" class="Links">Inicio</a></li>
+                    <li><a href="Galeria/galeria.html" class="Links">Galeria</a></li>
+                    <li><a href="https://bpbarberapeluquera.setmore.com/bastianbueno?instant_experiences_enabled=true" class="Links">Reserva Ya</a></li>
+                </nav>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="div1">
+        <h1>SeñaleStudios</h1>
+        <p>Una Barberia para toda la familia</p>
+        <div class="boton">
+            <button><a href="https://bpbarberapeluquera.setmore.com/bastianbueno?instant_experiences_enabled=true">Reserva Ya</a></button>
+        </div>
+    </div>
+
+    <div class="div2">
+        <h1>Contactanos</h1>
+        <form class="Formulario" method="POST" id="Formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea placeholder="Mensaje" name="mensaje" required></textarea>
+            <br>
+            <input type="submit" class="Enviar" value="Enviar">
+        </form>
+    </div>
+
+    <div id="resultado"></div>
+
+    <footer>
+        <p>&copy; 2025 SeñaleStudios. Todos los derechos reservados.</p>
+        <div class="RedesSociales">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="Correo.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
