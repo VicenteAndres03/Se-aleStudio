@@ -18,7 +18,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Expone el puerto de tu aplicación (por defecto en Spring Boot es 8080)
-EXPOSE 8080
+EXPOSE 8081
 
 # Comando para ejecutar la aplicación
 # Asegúrate de que el nombre del archivo JAR sea el correcto
