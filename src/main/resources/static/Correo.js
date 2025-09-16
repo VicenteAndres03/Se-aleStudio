@@ -13,22 +13,22 @@ document.getElementById("Formulario").addEventListener("submit", function(event)
     resultadoDiv.innerText = 'Enviando...';
     resultadoDiv.style.color = 'blue';
 
-    //se manda la solicitud del POST al servidor
-    fetch('http://localhost:8081/api/contacto',{
+    //se manda la solicitud del POST al servidor - CAMBIADA LA URL
+    fetch('https://senalestudios.onrender.com/api/contacto',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
     })
-    .then(response => {  // Cambiado de 'data' a 'response'
+    .then(response => {
         if(!response.ok){
             throw new Error('Error en la solicitud');
         }
-        return response.text();
+        return response.json(); // Cambiado a JSON para obtener el mensaje del servidor
     })
     .then(data => {
-        resultadoDiv.innerText = 'Mensaje enviado correctamente';  // Mensaje fijo en lugar de data.mensaje
+        resultadoDiv.innerText = data.mensaje || 'Mensaje enviado correctamente';
         resultadoDiv.style.color = 'green';
         form.reset(); //resetea el formulario
     })
